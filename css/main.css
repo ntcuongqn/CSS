@@ -212,6 +212,9 @@ button.w3l_search {
 .full-width{
   width: 100%;
 }
+img.full-width {
+    height: 600px !important;
+}
 
 /** NAV **/
 #menu_top ul, #advertise_home ul, #news_special ul, #cate_menu ul,#share ul, #history_ul, #history_ul ul {list-style: none; padding: 0; margin: 0;}
