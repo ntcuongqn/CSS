@@ -221,7 +221,7 @@ button.w3l_search {
     #menu_top {display: inline-block !important;}
 	#menu_top .level1{float: left;position: relative; z-index: 4;}
 	#menu_top .level1:last-child {margin-right: 0;}
-	#menu_top .link1{color: #FFF; font-weight: bold; font-size: 14px; text-transform: uppercase; line-height: 50px; padding: 0px 15px;display: block}
+	#menu_top .link1{color: #FFF; font-weight: bold; font-size: 14px; text-transform: uppercase; line-height: 50px; padding: 0px 8px;display: block}
 	#menu_top .link1 i {margin-left: 6px;}
 	#menu_top .ulmenu2 {position: absolute; 
 		top: 50px; 
@@ -283,7 +283,7 @@ footer h4{
     color:#FFF;
 }
 /** about **/
-#about {padding: 10px 0px;/*background-image:url("../images/background.jpg");background-repeat:repeat;*/}
+#about {padding: 40px 0px;/*background-image:url("../images/background.jpg");background-repeat:repeat;*/}
 #about p{color:#313131;line-height: 1.8em;
     font-size: 14px;
 	padding: 5px 0px;
@@ -1425,7 +1425,7 @@ ul.timeline > li:before {
 
     .product-item-content:before {
         content: '';
-        background: #00e5ff;
+        background: #027fcc;
         position: absolute;
         left: 0;
         top: 0;
@@ -1588,7 +1588,7 @@ ul.timeline > li:before {
     display: block;
 }
 .bftechblog_c_txt {
-    font-size: 16px;
+    font-size: 13px;
     font-family: 'Open Sans', sans-serif;
     color: rgb(0, 0, 0);
     line-height: 1.5;
@@ -1634,15 +1634,15 @@ ul.timeline > li:before {
 }
 .bftechblog_box_txt {
     width: 100%;
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     color: rgb(255, 255, 255);
-    font-weight: 700;
-    line-height: 1.2;
+    font-weight: 500;
+    line-height: 1.3;
     display: block;
     position: absolute;
     padding: 0 25px;
-    bottom: 30px;
+    bottom: 22px;
     z-index: 15;
 }
 .bftechblog_item_txt{
@@ -1671,22 +1671,22 @@ ul.timeline > li:before {
 }
 
 .kpbf_btn {
-    background-color: rgb(77, 126, 252);
+    /*background-color: rgb(77, 126, 252);*/
     display: block;
     margin: 0px auto 30px auto;
-    width: 321px;
+    width: 100%;
     height: 50px;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
-    color: rgb(255, 255, 255);
+    /*color: rgb(255, 255, 255);*/
     font-weight: 700;
     line-height: 50px;
-    text-align: center;
+    text-align: right;
 }
 .kpbf_btn:hover {
-    color: rgb(255, 255, 255);
+    /*color: rgb(255, 255, 255);
     background-color: #2a5cda;
-    text-decoration: none;
+    text-decoration: none;*/
 }
 .kpbf_btn img {
     margin-left: 10px;
@@ -1709,13 +1709,13 @@ ul.timeline > li:before {
     background-repeat: no-repeat;
     background-position: bottom center;
     background-color: transparent;
-    padding: 45px 0 20px;
+    padding: 20px 0 20px;
     float: left;
     width: 100%;
     background-size: cover;
 }
 .tvcb_title{
-    margin-bottom: 53px;
+    margin-bottom: 20px;
     text-align: center;
 }
 .tvcb_txt {
@@ -1735,8 +1735,8 @@ ul.timeline > li:before {
 .tvcb_item{
     width: 100%;
     background: #fff;
-    padding: 30px;
-	margin-bottom: 25px;
+    /*padding: 20px;*/
+	margin-bottom: 20px;
 }
 .tvcb_item .ecm-item{
 	display: block;
@@ -1807,13 +1807,19 @@ ul.timeline > li:before {
     background-color: #1cbadb;
 }
 
-#about{
-    background-color: #ebffeb;
+#about {
+    /*background-color: #ebffeb;
+    background-image: url('../images/bg-about.png');
+    background-repeat: no-repeat;
+    background-position: center;*/
+    
 }
+
 #notification{
-    background-image: url('../images/bg-product-service.png');
-    background-size: cover;
+    /*background-image: url('../images/bg-product-service.png');
+    background-size: cover;*/
     position: relative;
+    padding-top:20px;
 }
 #notification::before{
     content:'';
@@ -1822,16 +1828,16 @@ ul.timeline > li:before {
     top: 0;
     position: absolute;
     left: 0;
-    background-color: rgba(39,144,176, 0.95);
+    /*background-color: rgba(39,144,176, 0.95);*/
 }
 #notification .product-item-content .item-introtext{
-    color: #fff;
+    /*color: #fff;*/
 }
 #notification .product-item-content .item-title, .product-item-content .item-title a{
-    color: #fff;
+    /*color: #fff;*/
 }
 #notification .header-section .title_style{
-    color: #fff;
+    /*color: #fff;*/
 }
 .home_tvcb .tvcb_item{
     display: none;
@@ -1959,3 +1965,14 @@ ul.timeline > li:before {
   #breadcrumbs .breadcrumb{
         margin-bottom: 0px;
   }
+  .search{
+      background-color:#ebebeb;
+      width:100%;
+      height:100px;
+  }
+.line1 {
+    height: 2px;
+    overflow: hidden;
+    background: #ebebeb;
+    width: 25%;
+}
