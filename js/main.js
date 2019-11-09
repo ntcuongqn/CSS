@@ -316,6 +316,9 @@ function showQuantracmoitruong(){
 }
 function searchToggle(obj, evt){
     var container = $(obj).closest('li').find('.search-form');
+    if(window.window.innerWidth < 992){
+        container.submit();
+    }else{
         if(!container.hasClass('active')){
             container.addClass('active');
             evt.preventDefault();
@@ -325,6 +328,9 @@ function searchToggle(obj, evt){
             // clear input
             container.find('.search-input').val('');
         }
+    }
+       
+
 }
 $(document).ready(function(){
     
