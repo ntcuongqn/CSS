@@ -64,14 +64,13 @@
                 </div>
             </div>
     </header>
-    <section id="nav" class="wow flipInX center" data-wow-delay="0.1s" data-spy="affix" data-offset-top="110">
+    <section id="nav" class="wow fadein" data-wow-delay="0.1s" data-spy="affix" data-offset-top="110">
         <div class="main_menu text-center">
             <!-- MENU TOP -->
             <div id="menu_top">
                 <ul class="ulmenu1">
         <li class="level1 active">
-    <a class="link1" target="_parent" href="/">
-                        Trang chủ                            </a>
+    <a class="link1" target="_parent" href="/"><span class="menu-icon fa fa-home"></a>
             </li>
         <li class="level1">
     <a class="link1" target="_parent" href="javascript:;">
@@ -144,15 +143,23 @@
     <a class="link1" target="_parent" href="lien_he.html">
                         Liên hệ                           </a>
             </li>
-            <li class="level1">
-                    <a class="link1" target="_parent" href="lien_he.html">
-                                        Liên hệ                           </a>
-                            </li>
-                            <li class="level1">
-                                    <a class="link1" target="_parent" href="lien_he.html">
-                                                        Liên hệ                           </a>
-                                            </li>
+        <li class="level1">
+            <a class="link1" target="_parent" href="lien_he.html">
+                                Liên hệ                           </a>
+        </li>
+        <li class="level1">
+            <a class="link1" target="_parent" href="lien_he.html">
+                            Liên hệ                           </a>
+        </li>
+        <li class=level1>
+            <a class="link1" onclick="searchToggle(this, event);" id="btn-search" target="_parent" ><span class="menu-icon fa fa-search"></span></a>
+            <form id="form-search" class='search-form' action='search'>
+                <input type='text' placeholder='Tìm kiếm' name='s' />
+            </form>
+        </li>
+
                 </ul>
+               
             </div>               
         </div>
     </section>

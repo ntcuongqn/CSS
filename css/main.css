@@ -230,7 +230,7 @@ img.full-width {
 		top: 50px; 
 		left: 0;  
 		padding: 0px; 
-		width: 340px; 
+        width: auto; 
 		display: none; 
 		background-color: #fff;
 		-webkit-background-clip: padding-box;
@@ -241,7 +241,12 @@ img.full-width {
 		-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 		box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 	}
-	#menu_top .link2 {color: #333333;  display: block; font-size: 14px; z-index: 3; padding: 10px 15px; text-align: left;}
+	#menu_top .link2 {  text-overflow: ellipsis;
+        overflow: hidden; 
+        white-space: nowrap;
+        color: #333333;  
+        display: block; 
+        font-size: 14px; z-index: 3; padding: 10px 15px; text-align: left;}
 	#menu_top .link2:hover{
 		background-color: #fafafa;
 	}
@@ -1978,4 +1983,69 @@ ul.timeline > li:before {
     overflow: hidden;
     background: #ebebeb;
     width: 25%;
+}
+#menu_top .link1 .menu-icon{
+    font-size: 16px;
+    line-height: 50px;
+    color: #fff;
+}
+#menu_top .link1:hover, #menu_top .link1.active{
+    background: #025fcc;
+}
+.blog-tags{
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 15px 0px;
+    float: left;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.blog-tags .list-tag .item-tag{
+        border-radius: 5px;
+        background-color: rgb(241, 241, 241);
+        width: auto;
+        padding: 0px 15px;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        height: 30px;
+        font-size: 13px;
+        color: rgb(153, 153, 153);
+        line-height: 30px;
+}
+.blog-tags .list-tag .item-tag:hover{
+    background-color: #027fcc;
+    color: #fff;
+}
+.search-form{
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    display: none;
+    -webkit-animation: searchslideIn 100ms forwards;
+    -moz-animation: searchslideIn 100ms forwards;
+    animation: searchslideIn 100ms forwards;
+    z-index: 1;
+    display: none;
+}
+.search-form.active{
+    display: block;
+}
+.search-form input{
+    font-size: 14px;
+    padding: 4px 15px;
+    margin-top: 0px;
+    transform: translateY(-50%);
+    margin-right: 3px;
+    width: auto;
+    background-color: #fff;
+    min-width: 350px;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
 }
