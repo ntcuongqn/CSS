@@ -1881,6 +1881,7 @@ ul.timeline > li:before {
 #menu_top .link1:hover, #menu_top .link1.active{
     background: #025fcc;
 }
+
 .blog-tags{
     border-top: 1px solid #d1d1d1;
     border-bottom: 1px solid #d1d1d1;
@@ -1888,6 +1889,11 @@ ul.timeline > li:before {
     float: left;
     width: 100%;
     margin-bottom: 25px;
+}
+.hashtag .blog-tags{
+    border-top: none;
+    border-bottom:none;
+    margin-bottom: 0px;
 }
 .blog-tags .list-tag .item-tag{
         border-radius: 5px;
