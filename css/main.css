@@ -2011,7 +2011,43 @@ img.full-width {
 	#menu_top .level1{float: left;position: relative; z-index: 4;}
 	#menu_top .level1:last-child {margin-right: 0;}
 	#menu_top .link1{color: #FFF; font-weight: bold; font-size: 14px; text-transform: uppercase; line-height: 50px; padding: 0px 8px;display: block}
-	#menu_top .link1 i {margin-left: 6px;}
+    #menu_top .level1 .link1:before,#menu_top .level1 .link1:after{
+        position: absolute;
+        -webkit-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+    }
+   
+    #menu_top .level1 .link1:before{
+        top: 0;
+        left:0;
+        display: block;
+        height: 3px;
+        width: 0%;
+        content: "";
+        background-color: #fff;
+    }
+    #menu_top .level1 .link1:after {
+        left: 0;
+        top: 0;
+        padding: 0.5em 0;
+        position: absolute;
+        content: attr(data-hover);
+        color: #ffffff;
+        white-space: nowrap;
+        max-width: 0%;
+        overflow: hidden;
+    }
+
+
+    #menu_top .level1.active .link1:before, #menu_top .level1:hover .link1:before{
+        opacity: 1;
+        width: 100%;
+    }
+    #menu_top .level1.active .link1:after,#menu_top .level1:hover .link1:after{
+        max-width: 100%;
+    }
+
+    #menu_top .link1 i {margin-left: 6px;}
 	#menu_top .ulmenu2 {position: absolute; 
 		top: 50px; 
 		left: 0;  
@@ -2034,7 +2070,8 @@ img.full-width {
         display: block; 
         font-size: 14px; z-index: 3; padding: 10px 15px; text-align: left;}
 	#menu_top .link2:hover{
-		background-color: #fafafa;
+        background-color: #027fcc;
+        color: #fff;
 	}
 	#menu_top .level2:last-child .link2 {border: none;}
 	#menu_top .level1:hover .ulmenu2 {display: block;}
