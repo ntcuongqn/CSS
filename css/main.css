@@ -1890,23 +1890,27 @@ ul.timeline > li:before {
     width: 100%;
     margin-bottom: 25px;
 }
+.hashtag {
+    height: 60px;
+    background-color: #ebebeb;
+}
 .hashtag .blog-tags{
     border-top: none;
     border-bottom:none;
     margin-bottom: 0px;
 }
-.blog-tags .list-tag .item-tag{
-        border-radius: 5px;
-        background-color: rgb(241, 241, 241);
-        width: auto;
-        padding: 0px 15px;
-        float: left;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        height: 30px;
-        font-size: 13px;
-        color: rgb(153, 153, 153);
-        line-height: 30px;
+.blog-tags .list-tag .item-tag {
+    border-radius: 5px;
+    background-color: rgb(241, 241, 241);
+    width: auto;
+    padding: 0px 15px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    font-size: 13px;
+    color: #a94442;
+    line-height: 30px;
 }
 .blog-tags .list-tag .item-tag:hover{
     background-color: #027fcc;
@@ -2121,4 +2125,7 @@ img.full-width {
     #btn-search .menu-icon{
         line-height: 40px !important;
     }
+
+
+    
 }
