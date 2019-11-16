@@ -1952,7 +1952,7 @@ ul.timeline > li:before {
 	#header .social {position: absolute; left: 180px; top: 25px;}
 	#header .social a {display: inline-block; margin-right: 10px; color: #666;}
 	#header .social i {margin-right: 10px; font-size: 16px; color: #027fcc; }
-    #header .language {position: absolute;right: 0; top: 30px;}
+    #header .language {position: absolute;right: 0; top: 90px;}
 	#header .language .flag .fa-caret-down {margin-left: 10px; }
 	#header .language .flag_option {position: absolute; top: 0px; padding-top: 20px; display: none;}
 	#header .language .flag_option a {display: block;}
