@@ -165,7 +165,7 @@ button.w3l_search {
 /** FOOTER **/
 footer{
     background: #027fcc;
-    padding: 49px 0px 10px 0;
+    padding: 10px 0px 10px 0;
     color: #FFF;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -414,7 +414,7 @@ ul.nav-pills  { text-align: center; margin: 15px auto 10px auto; width: auto; di
 }
 .mobile-app h4{
 	text-align: center;
-	margin:	10px 0px 20px 0px;
+	margin:	10px 0px 10px 0px;
 	font-weight: 600;
 }
 .mobile-app .app{
@@ -1892,7 +1892,7 @@ ul.timeline > li:before {
 }
 .hashtag {
     height: 60px;
-    background-color: #ebebeb;
+    background-color: #027fcc;
 }
 .hashtag .blog-tags{
     border-top: none;
@@ -1900,22 +1900,24 @@ ul.timeline > li:before {
     margin-bottom: 0px;
 }
 .blog-tags .list-tag .item-tag {
-    border-radius: 5px;
-    background-color: rgb(241, 241, 241);
     width: auto;
-    padding: 0px 15px;
+    padding: 0px 3px;
     float: left;
     margin-right: 10px;
     margin-bottom: 10px;
     height: 30px;
     font-size: 13px;
-    color: #a94442;
+    color: #fff;
     line-height: 30px;
 }
-.blog-tags .list-tag .item-tag:hover{
-    background-color: #027fcc;
-    color: #fff;
-}
+    .blog-tags .list-tag .item-tag:hover {
+        border-radius: 5px;
+        background-color: rgb(241, 241, 241);
+        /*background-color: #027fcc;*/
+        color: #027fcc;
+        
+    }
+
 .search-form{
     position: absolute;
     right: 100%;
