@@ -379,5 +379,14 @@ $(document).ready(function(){
         $('#nav').removeAttr('style');
     }, 500);
 
-	
+    //setup notify 
+    function showNotifyContent(){
+        setTimeout(() => {
+            $('.notify_content').addClass('notify_active');
+        }, 300);
+    }
+    setTimeout(function(){
+        $('#notify_fixed').addClass('show');
+        showNotifyContent();
+    },500)
 })

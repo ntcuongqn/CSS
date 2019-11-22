@@ -151,13 +151,7 @@
             <a class="link1" target="_parent" href="lien_he.html">
                             Liên hệ                           </a>
         </li>
-        <li class=level1>
-            <a class="link1" onclick="searchToggle(this, event);" id="btn-search" target="_parent" ><span class="menu-icon fa fa-search"></span></a>
-            <form id="form-search" class='search-form' action='search'>
-                <input type='text' placeholder='Tìm kiếm' name='s' />
-            </form>
-        </li>
-
+        
                 </ul>
                
             </div>               
@@ -206,15 +200,31 @@
             </a>
         </div>
     </section>
-    <section class="hashtag wow fadeInUp">
+    <section class="hashtag wow fadeInUp navhead">
         <div class="container">
             <div class="blog-tags">
                 <div class="list-tag">
-                    <a href="#" title="tag1"><span class="item-tag">#Tag 1</span> </a>
-                            <a href="#" title="Tag 2"><span class="item-tag">#Tag 2</span> </a>
-                            <a href="#" title="Thoát nước hà nội"><span class="item-tag">#Thoạt nước hà nội</span> </a>
-                            <a href="#" title="HSDC"><span class="item-tag">#HSDC</span> </a>
+                    <div class="box-search col-lg-4 col-xs-12 pull-right">
+                            <form class="searchform cf">
+                                <input type="text" name="s" placeholder="Tìm kiếm ">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                  </form>
                     </div>
+                    <div class="col-lg-8 col-xs-12">
+                        <div class="tags">
+                            <span class="pull-left hashtag-icon">
+                                <i class="fa fa-tags" aria-hidden="true"></i>
+                            </span>
+                            <div class="hash-tag-content">
+                                <a href="#" title="tag1"><span class="item-tag">#Tag 1</span> </a>
+                                <a href="#" title="Tag 2"><span class="item-tag">#Tag 2</span> </a>
+                                <a href="#" title="Thoát nước hà nội"><span class="item-tag">#Thoạt nước hà nội</span> </a>
+                                <a href="#" title="HSDC"><span class="item-tag">#HSDC</span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
             </div>
         </div>
     </section>
@@ -570,6 +580,35 @@
                     </div>
             </div>
     </section>
+    <!-- notify-->
+    <div id="notify_fixed" class="">
+			<div class="notify_button">
+                <span class="count_notify">1</span>
+                <div class="notify-icon">
+                    <div class="notify-icon-inner">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                    </div>
+                </div>
+				
+			</div>
+			<div class="notify_content">
+				<div class="notify_body">
+					<h2>Thông báo</h2>
+					<span class="closed_notify"></span>
+					<div class="notify_divider"></div>
+					<div class="list_notify">
+						<p>
+							<a href="#">
+								<span class="notify_number">1.</span> 
+								<span class="notify_text">Các chương trình khuyến mãi chỉ áp dụng khi đặt hàng trên website</span>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.quicksand.js"></script>
