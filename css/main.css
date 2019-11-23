@@ -41,7 +41,7 @@ img.displayed {
     background-color: transparent;
 }
 .h1, .h2, .h3, h1, h2, h3{
-	margin-top: 10px;
+	margin-top: 30px;
 }
 
 .nopadding {padding: 0;margin: 0;}
