@@ -1927,8 +1927,8 @@ ul.timeline > li:before {
     float: left;
     margin-right: 10px;
     margin-bottom: 5px;
-    font-size: 13px;
-    color: #666;
+    font-size: 14px;
+    color: black;
 }
     .blog-tags .list-tag .item-tag:hover {
         border-radius: 5px;
@@ -2315,7 +2315,7 @@ line-height: 15px
 }
 #notify_fixed .notify_content .notify_body .list_notify {
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 13px;
 }
 #notify_fixed .notify_content .notify_body .list_notify p {
     line-height: 1.42857143;
