@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Sarabun:100,200,300,400,500,600,700,800&display=swap');
-body {font-size: 14px; font-family: 'Open Sans', sans-serif; line-height: 21px; color: #666666}
+body {font-size: 14px; font-family: 'Open Sans', sans-serif; line-height: 21px; color: black}
 .col-xs-15,.col-sm-15,.col-md-15,.col-lg-15, .col-lg-45{position: relative; min-height: 1px; padding-right: 15px; padding-left: 15px; }
 @media (min-width: 768px) and (max-width: 991px) {
     .col-sm-15 {width: 20%;float: left;}
@@ -181,7 +181,9 @@ footer h4{
 }
 /** about **/
 #about {padding: 40px 0px;/*background-image:url("../images/background.jpg");background-repeat:repeat;*/}
-#about p{color:#313131;line-height: 1.8em;
+#about p{
+    color:black;
+    line-height: 1.8em;
     font-size: 14px;
 	padding: 5px 0px;
 	margin-bottom: 5px;
@@ -1361,7 +1363,7 @@ ul.timeline > li:before {
     }
 
         .product-item-content .item-title, .product-item-content .item-title a {
-            color: #4a4d54;
+            color: black;
         }
 
     .product-item-content .item-introtext {
@@ -1596,7 +1598,7 @@ ul.timeline > li:before {
  .title_style {
 	font-size: 32px;
     font-family: "Sarabun";
-    color: rgb(0, 0, 0);
+    color: black;
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
