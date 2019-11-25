@@ -380,13 +380,25 @@ $(document).ready(function(){
     }, 500);
 
     //setup notify 
-    function showNotifyContent(){
+    function toogleNotifyContent(){
         setTimeout(() => {
-            $('.notify_content').addClass('notify_active');
+            if($('.notify_content').hasClass('notify_active')){
+                $('.notify_content').removeClass('notify_active');
+            }else{
+                $('.notify_content').addClass('notify_active');
+            }
+            
         }, 300);
     }
     setTimeout(function(){
         $('#notify_fixed').addClass('show');
-        showNotifyContent();
-    },500)
+        toogleNotifyContent();
+    },500);
+
+    $('.closed_notify').on('click',function(){
+        toogleNotifyContent();
+    });
+    $('.notify_button').on('click',function(){
+        toogleNotifyContent();
+    })
 })
