@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Sarabun:100,200,300,400,500,600,700,800&display=swap');
-body {font-size: 14px; font-family: 'Open Sans', sans-serif; line-height: 21px; color: #666666}
+body {font-size: 14px; font-family: 'Open Sans', sans-serif; line-height: 21px; color: black}
 .col-xs-15,.col-sm-15,.col-md-15,.col-lg-15, .col-lg-45{position: relative; min-height: 1px; padding-right: 15px; padding-left: 15px; }
 @media (min-width: 768px) and (max-width: 991px) {
     .col-sm-15 {width: 20%;float: left;}
@@ -41,7 +41,7 @@ img.displayed {
     background-color: transparent;
 }
 .h1, .h2, .h3, h1, h2, h3{
-	margin-top: 10px;
+	margin-top: 30px;
 }
 
 .nopadding {padding: 0;margin: 0;}
@@ -181,7 +181,9 @@ footer h4{
 }
 /** about **/
 #about {padding: 40px 0px;/*background-image:url("../images/background.jpg");background-repeat:repeat;*/}
-#about p{color:#313131;line-height: 1.8em;
+#about p{
+    color:black;
+    line-height: 1.8em;
     font-size: 14px;
 	padding: 5px 0px;
 	margin-bottom: 5px;
@@ -1361,7 +1363,7 @@ ul.timeline > li:before {
     }
 
         .product-item-content .item-title, .product-item-content .item-title a {
-            color: #4a4d54;
+            color: black;
         }
 
     .product-item-content .item-introtext {
@@ -1596,7 +1598,7 @@ ul.timeline > li:before {
  .title_style {
 	font-size: 32px;
     font-family: "Sarabun";
-    color: rgb(0, 0, 0);
+    color: black;
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
@@ -1951,7 +1953,7 @@ ul.timeline > li:before {
     float: left;
     margin-right: 10px;
     margin-bottom: 5px;
-    font-size: 13px;
+    font-size: 14px;
     color: #333;
     border: 1px solid rgba(0,0,0,0.5);
     border-radius: 100px;
@@ -1970,7 +1972,7 @@ ul.timeline > li:before {
     padding: 0 15px;
     line-height: 28px;
     background: rgba(0,0,0,0.1);
-    
+
 }
 .bg-orange .blog-tags .list-tag .item-tag {
     color: #fff;
@@ -1985,7 +1987,7 @@ ul.timeline > li:before {
     border-radius: 100px;
     background: rgba(0,0,0,0.1);
     color: #fff;
-    
+
 }
 .search-form{
     position: absolute;
@@ -2350,7 +2352,7 @@ line-height: 15px
 }
 #notify_fixed .notify_content .notify_body .list_notify {
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 13px;
 }
 #notify_fixed .notify_content .notify_body .list_notify p {
     line-height: 1.42857143;
