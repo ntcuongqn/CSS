@@ -2268,6 +2268,7 @@ line-height: 15px
     box-shadow: 0 0 2px #2692dd inset;
     -moz-box-shadow: 0 0 2px #2692dd inset;
     -webkit-box-shadow: 0 0 2px #2692dd inset;
+	line-height:14px;
 }
 .searchform button:hover {
     opacity:.9;
