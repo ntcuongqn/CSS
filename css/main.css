@@ -2045,13 +2045,70 @@ ul.timeline > li:before {
 	#menu_top .level1:hover .ulmenu2 {display: block;}
 	#menu_top .level2:first-child {border-top: none;}
 	#menu_top .level2:last-child {border-bottom: none;}
-
+	#menu_top .level1 .ulmenu2 .ulmenuchild{
+		position: absolute;
+		left:100%;
+		min-width: 165px;
+		top:0;
+		padding: 0px;
+		display: none;
+		background-color: #fff;
+		-webkit-background-clip: padding-box;
+		background-clip: padding-box;
+		border: 1px solid #ccc;
+		border: 1px solid rgba(0, 0, 0, .15);
+		border-radius: 0 0 4px 4px;
+		-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+		box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	}
+	#menu_top .level1 .ulmenu2 .ulmenuchild .linkchild{
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		color: #333333;
+		display: block;
+		font-size: 14px;
+		z-index: 3;
+		padding: 10px 15px;
+		text-align: left;
+	}
+	#menu_top .level1 .ulmenu2 .ulmenuchild .linkchild:hover,#menu_top .level1 .ulmenu2 .ulmenuchild .linkchild.active,#menu_top .level1 .ulmenu2 .ulmenuchild .linkchild:active{
+		background-color: #027fcc;
+		color: #fff;
+	}
+	#menu_top .level2:hover > .ulmenuchild {
+		display: block;
+		border-left:transparent;
+	}
+	#menu_top .linkchild:hover > .ulmenuchild {
+		display: block;
+	}
 	.mod_title {background: url("../images/bg/bg_bredcum.png") no-repeat #fafafa; height: 46px; margin-bottom: 30px;}
 	.mod_title .breadcrumb {float: right; padding: 0; color: #027fcc}
 	.mod_title .breadcrumb a{color: #666; line-height: 45px;}
 
 	#business_lists .tab a.active {border-bottom: 1px solid #027fcc; color: #027fcc}
 	#holder .tab a.active {border-bottom: 1px solid #027fcc; padding-right: 20px; bottom: -1px; font-weight: 500; color:#027fcc;}
+	
+	#menu_top .haschild:before{
+			content: "\f0da";
+	}
+}
+#menu_top .link1,#menu_top .link2,#menu_top .linkchild{
+	position:relative;
+}
+#menu_top .haschild{
+	position:absolute;
+	width:10px;
+	height:10px;
+	right: 3px;
+	top:35%
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grays
 }
 @media (max-width: 991px) {
 	header{background: #EEE;}
@@ -2066,6 +2123,21 @@ ul.timeline > li:before {
     #header .language .flag_option a {display: inline-block !important; margin-right: 5px;}
     #header .language .flag_option a:last-child {margin-right: 0;}
     #header .menu_mobile_active {background: #027fcc; color: #FFF;}
+	#header .mobile_menu, #header .logo {
+		float: left;
+		margin-top: 10px;
+	}
+	#menu_top .ulmenuchild {
+		margin-left: 15px;
+		margin-bottom: 7px;
+	}
+	#menu_top .haschild{
+		right:-15px;
+		top:20%;
+	}
+	#menu_top .haschild:before{
+		    content: "\f0d7";
+	}
 }
 
 @media (max-width: 479px) {
