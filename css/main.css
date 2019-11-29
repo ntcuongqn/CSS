@@ -2045,6 +2045,9 @@ ul.timeline > li:before {
 	#menu_top .level1:hover .ulmenu2 {display: block;}
 	#menu_top .level2:first-child {border-top: none;}
 	#menu_top .level2:last-child {border-bottom: none;}
+	#menu_top .level1,#menu_top .level2, #menu_top .lichild{
+		position:relative;
+	}
 	#menu_top .level1 .ulmenu2 .ulmenuchild{
 		position: absolute;
 		left:100%;
