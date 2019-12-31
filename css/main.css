@@ -2095,6 +2095,7 @@ ul.timeline > li:before {
 	
 	#menu_top .haschild:before{
 			content: "\f0da";
+			vertical-align:middle;
 	}
 }
 #menu_top .link1,#menu_top .link2,#menu_top .linkchild{
@@ -2273,6 +2274,20 @@ img.full-width {
     #btn-search .menu-icon{
         line-height: 40px !important;
     }
+	#menu_top li a:hover,#menu_top li a:active,#menu_top li a:focus{
+		background-color:#025fcc
+	}
+	#menu_top li a{
+		display:block;
+	
+	} 
+	#menu_top li a .haschild{
+		position:relative;
+		left:0;
+		right:0;
+		margin-left:3px;
+		margin-top:3px;
+	}
 
 
     
