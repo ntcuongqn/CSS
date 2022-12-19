@@ -25,3 +25,15 @@ if (document.querySelector('.sidenav-toggler')) {
       }
     }
   }
+
+
+$(document).ready(function(){
+    $('#selectall').click(function () {
+        $('.checklist-item').prop('checked', this.checked);
+    });
+
+    $('.checklist-item').change(function () {
+        var check = ($('.checklist-item').filter(":checked").length == $('.checklist-item').length);
+        $('#selectall').prop("checked", check);
+    });
+})

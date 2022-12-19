@@ -436,7 +436,8 @@
                             <div class="col-8">
                                 <div class="pull-right">
                                     <div class="input-group input-group-outline">
-                                        <label class="form-label">Tìm Nhập chuỗi cần tìm kiếm, dùng "" để tìm kiếm chính xác ...</label>
+                                        <label class="form-label">Tìm Nhập chuỗi cần tìm kiếm, dùng "" để tìm kiếm chính
+                                            xác ...</label>
                                         <input type="text" class="form-control" onfocus="focused(this)"
                                                onfocusout="defocused(this)">
                                     </div>
@@ -448,14 +449,35 @@
 
                         <div class="row mt-4">
                             <div class="col-12">
+                                <div class="toolbar">
+                                        <div class="form-check is-filled ps-0 pe-0 me-0 form-check-inline">
+                                            <input id="selectall" class="form-check-input checkboxes" type="checkbox"/>
+                                        </div>
+
+                                    <div class="form-check pe-0 ps-0  me-0 form-check-inline">
+                                        <button type="button" class="btn btn-default mb-0"><span><i class="fas fa-redo"></i></span></button>
+                                    </div>
+                                    <div class="form-check pe-0 ps-0  me-0 form-check-inline">
+                                        <div class="btn-group">
+                                            <a href="javascript:;" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span><i class="fas fa-ellipsis-v"></i></span>
+                                            </a>
+
+                                            <div class="dropdown-menu dropdown-menu-end border border-secondary">
+                                                <a href="javascript:;"  class="dropdown-item dropdown-item-has-icon text-dark" >
+                                                    Mask all as read
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <ul class="messages-list">
 
                                     <li class="unread">
 
                                         <div class="action">
                                             <div class="form-check is-filled ps-0">
-                                                <input class="form-check-input" type="checkbox"
-                                                >
+                                                <input class="form-check-input checklist-item" type="checkbox">
                                             </div>
                                             <label class="starmark">
                                                 <input type="checkbox" class="form-star-check"/><span
@@ -492,7 +514,7 @@
                                     <li>
                                         <div class="action">
                                             <div class="form-check is-filled ps-0">
-                                                <input class="form-check-input" type="checkbox"
+                                                <input class="form-check-input checklist-item" type="checkbox"
                                                 >
                                             </div>
                                             <label class="starmark">
@@ -530,7 +552,7 @@
                                     <li>
                                         <div class="action">
                                             <div class="form-check is-filled ps-0">
-                                                <input class="form-check-input" type="checkbox"
+                                                <input class="form-check-input checklist-item" type="checkbox"
                                                 >
                                             </div>
                                             <label class="starmark">
@@ -568,7 +590,7 @@
                                     <li class="unread">
                                         <div class="action">
                                             <div class="form-check is-filled ps-0">
-                                                <input class="form-check-input" type="checkbox"
+                                                <input class="form-check-input checklist-item" type="checkbox"
                                                 >
                                             </div>
                                             <label class="starmark">
@@ -606,7 +628,7 @@
                                     <li class="unread">
                                         <div class="action">
                                             <div class="form-check is-filled ps-0">
-                                                <input class="form-check-input" type="checkbox"
+                                                <input class="form-check-input checklist-item" type="checkbox"
                                                 >
                                             </div>
                                             <label class="starmark">
@@ -644,7 +666,7 @@
                                     <li>
                                         <div class="action">
                                             <div class="form-check is-filled ps-0">
-                                                <input class="form-check-input" type="checkbox"
+                                                <input class="form-check-input checklist-item" type="checkbox"
                                                 >
                                             </div>
                                             <label class="starmark">
@@ -682,7 +704,7 @@
                                     <li class="unread">
                                         <div class="action">
                                             <div class="form-check is-filled ps-0">
-                                                <input class="form-check-input" type="checkbox"
+                                                <input class="form-check-input checklist-item" type="checkbox"
                                                 >
                                             </div>
                                             <label class="starmark">
@@ -720,7 +742,7 @@
                                     <li>
                                         <div class="action">
                                             <div class="form-check is-filled ps-0">
-                                                <input class="form-check-input" type="checkbox"
+                                                <input class="form-check-input checklist-item" type="checkbox"
                                                 >
                                             </div>
                                             <label class="starmark">
@@ -758,7 +780,7 @@
                                     <li>
                                         <div class="action">
                                             <div class="form-check is-filled ps-0">
-                                                <input class="form-check-input" type="checkbox"
+                                                <input class="form-check-input checklist-item" type="checkbox"
                                                 >
                                             </div>
                                             <label class="starmark">
@@ -848,6 +870,7 @@
 
 
 <!--   Core JS Files   -->
+<script src="./assets/js/core/jquery.min.js"></script>
 <script src="./assets/js/core/popper.min.js"></script>
 <script src="./assets/js/core/bootstrap.min.js"></script>
 <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
@@ -866,7 +889,7 @@
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
 <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-<script src="./assets/js/material-dashboard.min.js?v=3.0.4"></script>
+<script src="./assets/js/material-dashboard.js?v=3.0.4"></script>
 
 <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
 <script src="./assets/js/public.js?v=3.0.4"></script>
